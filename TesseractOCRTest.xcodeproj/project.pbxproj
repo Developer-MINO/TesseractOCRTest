@@ -12,9 +12,13 @@
 		3E93D1661DCCF0990066A833 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E93D1641DCCF0990066A833 /* Main.storyboard */; };
 		3E93D1681DCCF0990066A833 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E93D1671DCCF0990066A833 /* Assets.xcassets */; };
 		3E93D16B1DCCF0990066A833 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E93D1691DCCF0990066A833 /* LaunchScreen.storyboard */; };
+		3E93D1731DCCF5FA0066A833 /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = 3E93D1721DCCF5FA0066A833 /* tessdata */; };
+		5D2F63C3C8EA4EC591A7F473 /* Pods_TesseractOCRTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27066854C307BC88C45B5EFE /* Pods_TesseractOCRTest.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		01D17012B94DFB2DFC4F7C8D /* Pods-TesseractOCRTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TesseractOCRTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TesseractOCRTest/Pods-TesseractOCRTest.debug.xcconfig"; sourceTree = "<group>"; };
+		27066854C307BC88C45B5EFE /* Pods_TesseractOCRTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TesseractOCRTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E93D15D1DCCF0990066A833 /* TesseractOCRTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TesseractOCRTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E93D1601DCCF0990066A833 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3E93D1621DCCF0990066A833 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +26,8 @@
 		3E93D1671DCCF0990066A833 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3E93D16A1DCCF0990066A833 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3E93D16C1DCCF0990066A833 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3E93D1721DCCF5FA0066A833 /* tessdata */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tessdata; sourceTree = "<group>"; };
+		3EBA54A5093C705E7247BD12 /* Pods-TesseractOCRTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TesseractOCRTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-TesseractOCRTest/Pods-TesseractOCRTest.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D2F63C3C8EA4EC591A7F473 /* Pods_TesseractOCRTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		36487F3DB8EFE6DF2EA14C21 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				27066854C307BC88C45B5EFE /* Pods_TesseractOCRTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		3E93D1541DCCF0990066A833 = {
 			isa = PBXGroup;
 			children = (
 				3E93D15F1DCCF0990066A833 /* TesseractOCRTest */,
 				3E93D15E1DCCF0990066A833 /* Products */,
+				C583B19780E667CFFC6B5135 /* Pods */,
+				36487F3DB8EFE6DF2EA14C21 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,8 +77,18 @@
 				3E93D1671DCCF0990066A833 /* Assets.xcassets */,
 				3E93D1691DCCF0990066A833 /* LaunchScreen.storyboard */,
 				3E93D16C1DCCF0990066A833 /* Info.plist */,
+				3E93D1721DCCF5FA0066A833 /* tessdata */,
 			);
 			path = TesseractOCRTest;
+			sourceTree = "<group>";
+		};
+		C583B19780E667CFFC6B5135 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				01D17012B94DFB2DFC4F7C8D /* Pods-TesseractOCRTest.debug.xcconfig */,
+				3EBA54A5093C705E7247BD12 /* Pods-TesseractOCRTest.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3E93D16F1DCCF0990066A833 /* Build configuration list for PBXNativeTarget "TesseractOCRTest" */;
 			buildPhases = (
+				337BD770B91059D10C158865 /* [CP] Check Pods Manifest.lock */,
 				3E93D1591DCCF0990066A833 /* Sources */,
 				3E93D15A1DCCF0990066A833 /* Frameworks */,
 				3E93D15B1DCCF0990066A833 /* Resources */,
+				181524C996D2BBD77EE296B9 /* [CP] Embed Pods Frameworks */,
+				8A999F7286B275EDE4F2D996 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -125,12 +155,61 @@
 			buildActionMask = 2147483647;
 			files = (
 				3E93D16B1DCCF0990066A833 /* LaunchScreen.storyboard in Resources */,
+				3E93D1731DCCF5FA0066A833 /* tessdata in Resources */,
 				3E93D1681DCCF0990066A833 /* Assets.xcassets in Resources */,
 				3E93D1661DCCF0990066A833 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		181524C996D2BBD77EE296B9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TesseractOCRTest/Pods-TesseractOCRTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		337BD770B91059D10C158865 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8A999F7286B275EDE4F2D996 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TesseractOCRTest/Pods-TesseractOCRTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3E93D1591DCCF0990066A833 /* Sources */ = {
@@ -182,12 +261,14 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -231,12 +312,14 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -257,9 +340,11 @@
 		};
 		3E93D1701DCCF0990066A833 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 01D17012B94DFB2DFC4F7C8D /* Pods-TesseractOCRTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = VHBSR3XVN2;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = TesseractOCRTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.minos.TesseractOCRTest;
@@ -270,9 +355,11 @@
 		};
 		3E93D1711DCCF0990066A833 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3EBA54A5093C705E7247BD12 /* Pods-TesseractOCRTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = VHBSR3XVN2;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = TesseractOCRTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.minos.TesseractOCRTest;
@@ -300,6 +387,7 @@
 				3E93D1711DCCF0990066A833 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
